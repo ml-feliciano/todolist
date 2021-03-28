@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo. | A Simple To-Do List Web App.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class = "grayscreen hide"></div>
+
+    <div class="alert-div hide">
+        <div class="row row-alert">
+            <div class="col s8 m4 l4 offset-l4 offset-m4 offset-s2 alert">
+                <div class="card hoverable">
+                    <div class="card-content">
+                        <p class = "message"></p>
+                        <div class = "right-align">
+                            <a href="#" class = "ok-Btn blue btn waves-effect waves-light">OK</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <div class="card app">
+                    <div class="card-content">
+                        <span class="card-title">
+                            <h5>to-do.</h5>
+                        </span>
+                        <p>A simple minimalist to-do list web app.</p>
+                        <div class="row">
+                            <div class="col s12">
+                                <form autocomplete="off">
+                                    <div class="input-field">
+                                        <input type="text" id="task">
+                                        <label for="task">Enter a new task</label>
+                                    </div>
+                                    <button class = "btn waves-effect waves-light green">Add Task <i class="material-icons right">send</i> </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-action">
+                        <h5>your task-list.</h5>
+                        <p class="quote">loading...</p>
+                        <div class="row">
+                            <div class="col s12">
+                                <div class="input-field">
+                                    <input type="text" id="filter">
+                                    <label for="filter">Filter tasks</label>
+                                </div>
+                                <ul class="collection"></ul>
+                                <a href="#" class = "clr-btn btn waves-effect waves-light black"><i class="material-icons right">delete</i>Clear Tasks</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <p class="center-align">Made with ❤️ by ML Feliciano</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
